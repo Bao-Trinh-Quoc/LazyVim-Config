@@ -48,3 +48,5 @@ vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-w>h]], { desc = "Terminal: focus lef
 vim.keymap.set("t", "<C-j>", [[<C-\><C-n><C-w>j]], { desc = "Terminal: focus below window" })
 vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-w>k]], { desc = "Terminal: focus above window" })
 vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-w>l]], { desc = "Terminal: focus right window" })
+-- Notification History
+-- vim.keymap.set("n", "<leader>nh", require("notify").history, { desc = "Notification History" })

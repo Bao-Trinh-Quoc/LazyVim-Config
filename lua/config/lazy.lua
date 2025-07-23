@@ -13,6 +13,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+-- Set up clipboard
+vim.opt.clipboard = "unnamedplus" -- this just for local pi 5
+vim.g.clipboard = "osc52"
 
 require("lazy").setup({
   spec = {
