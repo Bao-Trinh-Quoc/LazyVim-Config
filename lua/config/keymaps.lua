@@ -44,9 +44,29 @@ vim.keymap.set("n", "]q", "<cmd>TroublePrevious<cr>", {
 })
 
 -- Exit terminal mode but stay in the same window
-vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-w>h]], { desc = "Terminal: focus left window" })
-vim.keymap.set("t", "<C-j>", [[<C-\><C-n><C-w>j]], { desc = "Terminal: focus below window" })
-vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-w>k]], { desc = "Terminal: focus above window" })
-vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-w>l]], { desc = "Terminal: focus right window" })
--- Notification History
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Terminal: Exit terminal", noremap = true, silent = true })
+vim.keymap.set(
+  "t",
+  "<C-h>",
+  [[<C-\><C-n><C-w>h]],
+  { desc = "Terminal: focus left window", noremap = true, silent = true }
+)
+vim.keymap.set(
+  "t",
+  "<C-j>",
+  [[<C-\><C-n><C-w>j]],
+  { desc = "Terminal: focus below window", noremap = true, silent = true }
+)
+vim.keymap.set(
+  "t",
+  "<C-k>",
+  [[<C-\><C-n><C-w>k]],
+  { desc = "Terminal: focus above window", noremap = true, silent = true }
+)
+vim.keymap.set(
+  "t",
+  "<C-l>",
+  [[<C-\><C-n><C-w>l]],
+  { desc = "Terminal: focus right window", noremap = true, silent = true }
+) -- Notification History
 -- vim.keymap.set("n", "<leader>nh", require("notify").history, { desc = "Notification History" })
