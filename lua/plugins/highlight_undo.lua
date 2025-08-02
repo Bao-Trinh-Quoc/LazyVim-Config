@@ -5,7 +5,7 @@ return {
   config = function()
     require("highlight-undo").setup({
       -- time (in ms) the highlight stays, default is 300
-      duration = 1000,
+      duration = 500,
       -- highlight group to use, default is "IncSearch"
       hlgroup = "IncSearch",
     })
