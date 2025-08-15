@@ -3,7 +3,7 @@ return {
 	lazy = true,
 	priority = 1000,
 	opts = {
-		transparent = true,
+		transparent = false,
 		on_highlights = function(hl)
 			-- hl.LineNr = { fg = "#b2b8cf", bold = true }
 			hl.LineNrAbove = { fg = "#F5E57D", bold = true }
